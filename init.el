@@ -1,0 +1,21 @@
+(require 'package)
+(package-initialize)
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+(push (expand-file-name "config" user-emacs-directory) load-path)
+
+(load "00_default")
+(load "00_display")
+(load "00_keybind")
+(load "10_elscreen")
+(load "20_calendar")
+(load "20_coffee")
+(load "20_misc")
+(load "20_scala")
+(load "20_web")
