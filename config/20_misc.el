@@ -2,6 +2,8 @@
 
 (use-package markdown-mode)
 
+(use-package magit)
+
 (use-package php-mode)
 
 (use-package stylus-mode)
