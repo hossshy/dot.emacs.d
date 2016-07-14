@@ -1,10 +1,3 @@
-;; Auto byte compile
-(add-hook 'after-save-hook
-	  (lambda ()
-	    (let ((file (buffer-file-name)))
-	      (when (string-match ".*\\.el$" file)
-		(save-excursion (byte-compile-file file))))))
-
 ;; Emphasis parensis
 (show-paren-mode 1)
 

@@ -1,5 +1,6 @@
 auto-save-list/
 elpa/
+ensime/
 eshell/
 url/
 *.elc

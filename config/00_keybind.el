@@ -6,6 +6,9 @@
 ;; Move previous window
 (global-set-key "\C-xp" (lambda () (interactive) (other-window -1)))
 
+;; default browser
+(setq browse-url-browser-function 'eww-browse-url)
+
 ;; Open browser
 (global-set-key "\C-co" 'browse-url-at-point)
 
